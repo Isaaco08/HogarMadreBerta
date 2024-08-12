@@ -1,0 +1,116 @@
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #e0f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.Contenido {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: larger;
+}
+
+.ContenidoP {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#TituloH {
+  font-size: 32px;
+  color: #00296b;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.InfoHorario {
+  padding: 20px;
+  background-color: #00296b;
+  border-radius: 8px;
+  color: #ffffff;
+  width: 50%;
+}
+
+.InfoHorario p{
+  margin-top: 0px;
+  margin-bottom: 4%;
+}
+
+.InfoContacto {
+  padding: 20px;
+  width: 50%;
+  background-color: #00296b;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.InfoContacto a {
+  color: #eeb600;
+}
+
+.InfoDonaciones {
+  padding: 20px;
+  width: 50%;
+  background-color: #00296b;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.InfoDonaciones p {
+  margin-top: 4%;
+  margin-bottom: 0px;
+}
+
+.Info h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+footer {
+  margin-top: 5%;
+}
+
+/* Media queries para hacer la página responsiva */
+@media (max-width: 768px) {
+  .Contenido {
+    max-width: 70%; /* Ajusta el máximo ancho para pantallas pequeñas */
+    border-radius: 15px;
+  }
+
+  .ContenidoP {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos dentro de cada sección */
+    padding: auto;
+  }
+
+  #TituloH {
+    font-size: 24px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+    text-align: center;
+    margin-bottom: 10px; /* Reduce el margen inferior en pantallas pequeñas */
+    color: #00296b;
+  }
+
+  .InfoHorario, .InfoContacto, .InfoDonaciones {
+    width: 100%; /* Asegura que los contenedores ocupen el ancho completo */
+    max-width: 600px; /* Limita el ancho máximo para pantallas grandes */
+    margin: 10px 0; /* Espacio vertical entre los cuadros de información */
+    padding: 20px;
+  }
+
+  .InfoHorario p, .InfoContacto p, .InfoDonaciones p {
+    margin-top: 0px;
+    margin-bottom: 4%;
+  }
+
+  .InfoContacto a {
+    color: #eeb600;
+  }
+}

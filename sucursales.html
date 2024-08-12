@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogar Madre Bertha</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/sucursales.css">
+    
+</head>
+<body>
+    <div id="Encabezado">
+        <header>
+            <div>
+                <img id="logo" src="Imagenes/logoCortado.png" alt="Logo">
+            </div>
+            <div id="Titulo">
+                <h1>Hogar Madre Berta Acuña Ruiz </h1>
+            </div>
+        </header>
+        <nav class="navigation-menu" id="navigation-menu" name="itemsNav">
+            <a href="index.html">Inicio</a>
+                
+            <a href="historia.html">Historia</a>
+               
+            <a href="servicios.html">Servicios</a>
+                
+            <a href="sucursales.html">Sucursales</a>
+               
+            <a href="galeria.html">Galeria</a>
+            
+            <a href="informacion.html">Información</a>
+        </nav>
+        <i class="menu-toggle-btn fas fa-bars" id="botonMenu"></i>
+    </div>
+    <main>
+        <section class="hero">
+            <div class="container text-center">
+                <h2>Encuentra nuestras Sucursales</h2>
+                <p>Estamos ubicados en la zona de San Pablo de Heredia para ofrecerte el mejor servicio. Encuéntranos.</p>
+            </div>
+        </section>
+        <div class="Ubicacion">
+                <div id="map"></div>
+                    <script src="js/ubicacion.js"></script>
+                    <script
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCse_5TalkL6IHSxpX2H1O0ZqXgQigcI7Y&callback=initMap">
+                    </script>
+        </div>
+    </main>
+    <footer>
+   <p><b>Copyright © 2023 Hogar Madre Bertha Lab </b></p>
+    </footer>
+</body>
+</html>

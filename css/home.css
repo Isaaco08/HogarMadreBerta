@@ -1,0 +1,282 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 35px;
+}
+h3 {
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e0f7fa;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Para evitar el scroll horizontal */
+}
+
+#Encabezado,
+main,
+footer {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  width: 35%;
+  justify-content: center;
+  align-items: center;
+}
+
+#Encabezado {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #00296b;
+  color: #eeb600;
+}
+
+#logo {
+  width: 100px;
+  margin-left: 10%;
+}
+
+#Titulo {
+  margin-top: 10px;
+  margin-left: 4%;
+  color: #eeb600;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  padding: 20px;
+  color: #eeb600;
+  text-decoration: none;
+}
+
+.menu-toggle-btn {
+  float: right;
+  height: 90px;
+  line-height: 90px !important;
+  color: #fff;
+  font-size: 26px;
+  display: none !important;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#Contactenos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.RedesSociales {
+  display: flex;
+  align-items: center;
+}
+
+.FotoRedSocial {
+  width: 24px;
+  height: 24px;
+}
+
+table {
+  width: fit-content;
+  margin-right: 10px;
+}
+
+table tr td {
+  padding-top: 10px;
+}
+
+footer {
+  padding: 20px;
+  margin-top: 10px;
+  background-color: #00296b;
+  color: #eeb600;
+  text-align: center;
+}
+
+.navigation-menu {
+  font-size: larger;
+  width: 100%;
+}
+
+.Contenido {
+  width: 90%;
+  display: flex;
+  justify-content: space-between; /* Espacia los divs para que uno quede a la izquierda y otro a la derecha */
+  align-items: center; /* Alinea verticalmente los divs al centro (opcional) */
+}
+
+.Info {
+  color: white;
+  justify-content: center;
+  font-size: 18px;
+  height: 80%;
+  font-size: 18px;
+  display: inline-block;
+  width: 100%;
+}
+
+.Info h2 {
+  width: 900px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #00296b;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.objTitulo {
+  color: #eeb600;
+}
+
+.FotoMadre {
+  width: 50%; /* Ajusta el ancho del div según sea necesario */
+  padding: 10px; /* Espacio entre la imagen y el borde */
+  text-align: center; /* Centra la imagen dentro del div */
+  border: 5px solid #00296b; /* Tamaño del borde y color */
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.FotoMadre img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.ContenidoP {
+  display: flex;
+  justify-content: space-between; /* Si necesitas que los elementos dentro de ContenidoP se distribuyan horizontalmente */
+  align-items: center;
+  width: 100%; /* Para que ocupe todo el ancho disponible */
+}
+
+#Banner {
+  width: 100%;
+  height: 600px;
+  display: inline-block;
+}
+
+#MisionVision {
+  display: flex;
+  justify-content: center;
+}
+
+#MisionVision img {
+  width: 600px; /* Ajusta el tamaño según tu necesidad */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
+/*****************************************************************************************************************************************************/
+
+/* Media queries para hacer la página responsiva */
+@media (max-width: 768px) {
+  #Encabezado {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    background-color: #00296b;
+    color: #eeb600;
+  }
+
+  header {
+    width: 100%; /* Asegura que el header ocupe el ancho completo */
+    display: flex;
+    justify-content: center; /* Centra el contenido dentro del header */
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column; /* Apila los elementos del nav verticalmente */
+    width: 100%; /* Asegura que el nav ocupe el ancho completo */
+    background-color: #00296b; /* Mismo color de fondo que el encabezado para mantener la consistencia */
+  }
+
+  nav a {
+    padding: 15px;
+    color: #eeb600;
+    text-decoration: none;
+    text-align: center; /* Alinea el texto al centro */
+    border-top: 1px solid #eeb600;
+    border-bottom: 1px solid #eeb600;
+    width: 100%; /* Asegura que los enlaces ocupen el ancho completo */
+  }
+
+  .menu-toggle-btn {
+    display: block; /* Asegura que el botón de menú se muestre en pantallas pequeñas */
+  }
+
+  /* Apilar imágenes una sobre la otra */
+  #MisionVision {
+    flex-direction: column;
+  }
+
+  #MisionVision img {
+    width: 100%;
+  }
+
+  /* Ajustar contenido principal */
+  .Contenido {
+    flex-direction: column; /* Asegura que los elementos dentro de Contenido se apilen verticalmente */
+    align-items: center;
+  }
+
+  .Info, .FotoMadre {
+    width: 100%;
+    text-align: center;
+  }
+
+  .FotoMadre {
+    display: none; /* Oculta la imagen en pantallas pequeñas */
+  }
+  
+  #Banner {
+    height: auto;
+  }
+
+  .Info h2 {
+    font-size: 18px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+    padding: 8px; /* Reduce el padding en pantallas pequeñas */
+    margin: 8px 0;
+    width: 100%; /* Asegura que el ancho del texto se ajuste al contenedor */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total del contenedor */
+    border-radius: 15px;
+    margin-left: 6%;
+  }
+
+  .Info {
+    padding: 5px; /* Reduce el padding general para pantallas pequeñas */
+  }
+}

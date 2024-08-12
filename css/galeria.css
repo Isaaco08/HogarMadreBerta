@@ -1,0 +1,90 @@
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #e0f7fa; /* Azul muy claro */
+}
+
+main {
+  display: block; /* Asegura que main se comporte como un contenedor en bloque */
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+footer {
+  background-color: #00296b;
+  color: #eeb600;
+}
+
+section {
+  width: 100%; /* Asegura que cada sección ocupe todo el ancho disponible */
+  margin: 0 auto; /* Centra las secciones */
+}
+
+.titulo {
+  margin-top: 2%;
+  text-align: center;
+  color: #00296b
+}
+
+/* Estilos de la galería */
+.contenedor {
+  margin: 3em auto;
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  margin: 0.75em;
+}
+
+.item__img {
+  min-width: 200px;
+  max-width: 300px;
+  display: block;
+  border: 3px dashed white;
+  transition: transform 0.7s;
+  cursor: pointer;
+}
+
+.item__img:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+
+/* Estilos del carrusel */
+
+#carouselExample {
+  width: 50%;
+  margin: 0 auto; /* Centra el carrusel horizontalmente */
+  margin: 0 auto;
+}
+
+.carousel-inner img {
+  height: 600px; /* Fija una altura consistente para las imágenes */
+  object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
+}
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.ContenidoP {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  #carouselExample {
+    max-width: 100%; /* Para pantallas más pequeñas, ocupa todo el ancho */
+  }
+}
